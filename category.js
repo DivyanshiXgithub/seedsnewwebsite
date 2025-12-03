@@ -26,10 +26,10 @@ const categoryProducts = {
         { id: 'g-555-maize', name: 'G-555 Hybrid Maize Seeds', category: 'Field Crop Seeds', image: 'images/maizeseedsnew.jpg' }
     ],
     'fodder': [
-        { id: 'california-grass', name: 'California Grass (Annual Rye Grass)', category: 'Fodder Seeds', image: 'images/californiagrass.webp' },
+        { id: 'california-grass', name: 'California Grass (Annual Rye Grass)', category: 'Fodder Seeds', image: 'images/californiagrassnew.jpg' },
         { id: 'missile-bajra', name: 'Missile Hybrid Bajra', category: 'Fodder Seeds', image: 'images/Poshan-Wonder-Hybrid-Bajra.webp' },
         { id: 'poshan-wonder-bajra', name: 'Poshan Wonder Hybrid Bajra', category: 'Fodder Seeds', image: 'images/Poshan-Wonder-Hybrid-Bajra.webp' },
-        { id: 'elephanta-grass', name: 'Elephanta Grass – High Protein Grass', category: 'Fodder Seeds', image: 'images/californiagrass.webp' },
+        { id: 'elephanta-grass', name: 'Elephanta Grass – High Protein Grass', category: 'Fodder Seeds', image: 'images/elephantagrassnew.jpg' },
         { id: 'godhan-sorghum', name: 'Godhan Sorghum Sudan Grass', category: 'Fodder Seeds', image: 'images/sorghumsudangrass.jpg' },
         { id: 'nandi-white-sorghum', name: 'Nandi (White) Sorghum Sudan Grass', category: 'Fodder Seeds', image: 'images/sorghumsudangrass.jpg' },
         { id: 'nandi-red-sorghum', name: 'Nandi (Red) Sorghum Sudan Grass', category: 'Fodder Seeds', image: 'images/sorghumsudangrass.jpg' },

@@ -213,7 +213,7 @@ const products = {
     'california-grass': {
         name: 'California Grass (Annual Rye Grass)',
         category: 'Fodder Seeds',
-        image: 'images/californiagrass.webp',
+        image: 'images/californiagrassnew.jpg',
         description: `
             <p><strong>California Grass (Annual Rye Grass)</strong> is an excellent fodder variety that provides high-quality nutrition for livestock.</p>
             <p>This variety features rapid growth, high biomass production, and excellent nutritional value. It adapts well to various soil conditions and delivers consistent yields.</p>
@@ -243,7 +243,7 @@ const products = {
     'elephanta-grass': {
         name: 'Elephanta Grass – High Protein Grass',
         category: 'Fodder Seeds',
-        image: 'images/californiagrass.webp',
+        image: 'images/elephantagrassnew.jpg',
         description: `
             <p><strong>Elephanta Grass – High Protein Grass</strong> is a premium fodder variety that provides exceptional nutrition for livestock.</p>
             <p>This variety features high protein content, excellent biomass production, and strong disease resistance. It adapts well to various soil conditions and delivers consistent yields.</p>

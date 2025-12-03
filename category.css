@@ -186,7 +186,7 @@
 /* Product Grid - Enhanced for category page */
 .category-products .products__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr; /* Single column on small screens */
     gap: var(--spacing-lg);
 }
 
