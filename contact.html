@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Gentex Seeds - Get in touch with us for premium quality seeds, farming advice, and dealer inquiries.">
+    <meta name="keywords" content="contact Gentex Seeds, seed company contact, farming seeds inquiry, Ahmedabad seeds">
+    <title>Contact Us | Gentex Seeds - Empowering Agriculture</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Contact Page Specific Styles */
+        .contact-page {
+            padding-top: 100px;
+        }
+        
+        .contact-hero {
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c23 100%);
+            padding: var(--spacing-4xl) 0;
+            text-align: center;
+            color: var(--color-white);
+        }
+        
+        .contact-hero__title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: var(--spacing-md);
+            color: var(--color-white);
+        }
+        
+        .contact-hero__subtitle {
+            font-size: 1.125rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-main {
+            padding: var(--spacing-4xl) 0;
+            background: var(--color-cream);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-3xl);
+        }
+        
+        @media (min-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1.2fr;
+            }
+        }
+        
+        .contact-info-section {
+            background: var(--color-white);
+            padding: var(--spacing-2xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .contact-info-section h2 {
+            font-size: 1.75rem;
+            margin-bottom: var(--spacing-xl);
+            color: var(--color-primary);
+        }
+        
+        .contact-info-item {
+            display: flex;
+            gap: var(--spacing-lg);
+            padding: var(--spacing-lg) 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        
+        .contact-info-item:last-child {
+            border-bottom: none;
+        }
+        
+        .contact-info-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, rgba(45, 80, 22, 0.1) 0%, rgba(139, 195, 74, 0.1) 100%);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-info-content h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+            color: var(--color-black);
+        }
+        
+        .contact-info-content p {
+            color: var(--color-text-light);
+            line-height: 1.6;
+        }
+        
+        .contact-info-content a {
+            color: var(--color-primary);
+            font-weight: 500;
+        }
+        
+        .contact-info-content a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        
+        .social-link {
+            width: 48px;
+            height: 48px;
+            background: var(--color-cream);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            transition: all var(--transition-normal);
+        }
+        
+        .social-link:hover {
+            background: var(--color-primary);
+            transform: translateY(-3px);
+        }
+        
+        .contact-form-section {
+            background: var(--color-white);
+            padding: var(--spacing-2xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .contact-form-section h2 {
+            font-size: 1.75rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-black);
+        }
+        
+        .contact-form-section > p {
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-lg);
+        }
+        
+        @media (min-width: 576px) {
+            .form-row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xs);
+        }
+        
+        .form-group label {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            color: var(--color-text);
+        }
+        
+        .form-group label span {
+            color: #e53935;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            padding: var(--spacing-md);
+            font-family: inherit;
+            font-size: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: var(--radius-md);
+            background: var(--color-white);
+            transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+            outline: none;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+        
+        .form-group select {
+            cursor: pointer;
+        }
+        
+        .submit-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md) var(--spacing-2xl);
+            font-size: 1rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c23 100%);
+            color: var(--color-white);
+            border: none;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            box-shadow: 0 4px 16px rgba(45, 80, 22, 0.3);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(45, 80, 22, 0.4);
+        }
+        
+        .submit-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+        
+        /* Map Section */
+        .map-section {
+            padding: var(--spacing-4xl) 0;
+            background: var(--color-white);
+        }
+        
+        .map-section h2 {
+            text-align: center;
+            font-size: 1.75rem;
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .map-container {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 400px;
+            background: var(--color-cream);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .map-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f0ece3 0%, #e8e4db 100%);
+        }
+        
+        .map-placeholder span {
+            font-size: 4rem;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .map-placeholder p {
+            color: var(--color-text-muted);
+            font-size: 1.125rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="images/gentex-seeds-logo.png" alt="Gentex Seeds - Empowering Agriculture" class="logo-img">
+            </a>
+            
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="index.html#categories" class="nav__link">Categories</a></li>
+                <li class="nav__item"><a href="index.html#products" class="nav__link">Shop</a></li>
+                <li class="nav__item"><a href="index.html#news" class="nav__link">News</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link active">Contact Us</a></li>
+            </ul>
+            
+            <button class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <!-- Contact Hero -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="contact-hero__title">Contact Us</h1>
+                <p class="contact-hero__subtitle">
+                    Have questions about our seeds or need farming advice? 
+                    We're here to help you grow better.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Main Section -->
+        <section class="contact-main">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info-section">
+                        <h2>Get In Touch</h2>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📍</div>
+                            <div class="contact-info-content">
+                                <h4>Our Office</h4>
+                                <p>
+                                    Gentex Seeds,<br>
+                                    Prahlad Nagar,<br>
+                                    Ahmedabad, Gujarat, 380015<br>
+                                    India
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📞</div>
+                            <div class="contact-info-content">
+                                <h4>Phone Number</h4>
+                                <p>
+                                    <a href="tel:+917566333390">+91 75663 33390</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">✉️</div>
+                            <div class="contact-info-content">
+                                <h4>Email Address</h4>
+                                <p>
+                                    <a href="mailto:info@gentexseeds.com">info@gentexseeds.com</a><br>
+                                    <a href="mailto:sales@gentexseeds.com">sales@gentexseeds.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">🕐</div>
+                            <div class="contact-info-content">
+                                <h4>Business Hours</h4>
+                                <p>
+                                    Monday - Saturday: 9:00 AM - 6:00 PM<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="Facebook">📘</a>
+                            <a href="#" class="social-link" title="Instagram">📷</a>
+                            <a href="#" class="social-link" title="Twitter">🐦</a>
+                            <a href="#" class="social-link" title="YouTube">📺</a>
+                            <a href="#" class="social-link" title="WhatsApp">💬</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and our team will get back to you within 24 hours.</p>
+                        
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name <span>*</span></label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name <span>*</span></label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address <span>*</span></label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span>*</span></label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Select a subject</option>
+                                    <option value="product-inquiry">Product Inquiry</option>
+                                    <option value="dealer-inquiry">Dealer/Distributor Inquiry</option>
+                                    <option value="technical-support">Technical Support</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message <span>*</span></label>
+                                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <span>Send Message</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2>Find Us On Map</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.2619803657847!2d72.50750567596484!3d23.01011691782611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b2b5ebf5c3d%3A0x9e2b5f0e4b6c5a9f!2sPrahlad%20Nagar%2C%20Ahmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1701234567890!5m2!1sen!2sin" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="index.html" class="nav__logo">
+                        <img src="images/gentex-seeds-logo.png" alt="Gentex Seeds - Empowering Agriculture" class="logo-img footer-logo">
+                    </a>
+                    <p class="footer__tagline">
+                        Empowering Agriculture...<br>
+                        Sowing Growth, Harvesting Trust.
+                    </p>
+                </div>
+                
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#categories">Categories</a></li>
+                        <li><a href="index.html#products">Shop</a></li>
+                        <li><a href="index.html#news">News</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="index.html#products">Vegetable Seeds</a></li>
+                        <li><a href="index.html#products">Field Crop Seeds</a></li>
+                        <li><a href="index.html#products">Fodder Seeds</a></li>
+                        <li><a href="index.html#products">Hybrid Seeds</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Prahlad Nagar, Ahmedabad</li>
+                        <li>Gujarat, 380015</li>
+                        <li><a href="tel:+917566333390">+91 75663 33390</a></li>
+                        <li><a href="mailto:info@gentexseeds.com">info@gentexseeds.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 Gentex Seeds. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            // Show loading state
+            submitBtn.innerHTML = '<span>Sending...</span>';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            await new Promise(resolve => setTimeout(resolve, 1500));
+            
+            // Show success message
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+            this.reset();
+            
+            // Reset button
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        });
+    </script>
+</body>
+</html>
+
+
+

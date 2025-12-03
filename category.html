@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Category - Gentex Seeds">
+    <title id="page-title">Category | Gentex Seeds</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="category.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="images/gentex-seeds-logo.png" alt="Gentex Seeds - Empowering Agriculture" class="logo-img">
+            </a>
+            
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Us</a></li>
+                <li class="nav__item"><a href="index.html#categories" class="nav__link active">Categories</a></li>
+                <li class="nav__item"><a href="index.html#products" class="nav__link">Shop</a></li>
+                <li class="nav__item"><a href="index.html#news" class="nav__link">News</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact Us</a></li>
+            </ul>
+            
+            <button class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Category Header -->
+        <section class="category-header">
+            <div class="container">
+                <div class="category-header__content">
+                    <div class="category-header__breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span>/</span>
+                        <a href="index.html#categories">Categories</a>
+                        <span>/</span>
+                        <span id="category-name">Category</span>
+                    </div>
+                    <div class="category-header__info">
+                        <div class="category-header__image">
+                            <img id="category-image" src="" alt="Category Image">
+                        </div>
+                        <div class="category-header__text">
+                            <span class="section-tag" id="category-tag">🌱 Category</span>
+                            <h1 class="category-header__title" id="category-title">Category Name</h1>
+                            <p class="category-header__description" id="category-description">
+                                Explore our premium quality seeds in this category.
+                            </p>
+                            <div class="category-header__stats">
+                                <div class="category-stat">
+                                    <span class="stat-number" id="product-count">0</span>
+                                    <span class="stat-label">Products</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Products -->
+        <section class="category-products">
+            <div class="container">
+                <div class="category-products__header">
+                    <h2 class="category-products__title">All Products in <span class="text-gradient" id="category-title-products">Category</span></h2>
+                    <div class="category-products__divider">
+                        <span class="divider-line"></span>
+                        <span class="divider-icon">🌾</span>
+                        <span class="divider-line"></span>
+                    </div>
+                </div>
+                
+                <div class="products__grid" id="category-products-grid">
+                    <!-- Products will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="index.html" class="nav__logo">
+                        <img src="images/gentex-seeds-logo.png" alt="Gentex Seeds - Empowering Agriculture" class="logo-img footer-logo">
+                    </a>
+                    <p class="footer__tagline">
+                        Empowering Agriculture...<br>
+                        Sowing Growth, Harvesting Trust.
+                    </p>
+                </div>
+                
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#categories">Categories</a></li>
+                        <li><a href="index.html#products">Shop</a></li>
+                        <li><a href="index.html#news">News</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="category.html?cat=vegetable">Vegetable Seeds</a></li>
+                        <li><a href="category.html?cat=field">Field Crop Seeds</a></li>
+                        <li><a href="category.html?cat=fodder">Fodder Seeds</a></li>
+                        <li><a href="index.html#products">Hybrid Seeds</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Prahlad Nagar, Ahmedabad</li>
+                        <li>Gujarat, 380015</li>
+                        <li>+91 75663 33390</li>
+                        <li>info@gentexseeds.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 Gentex Seeds. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="category.js"></script>
+</body>
+</html>
+
